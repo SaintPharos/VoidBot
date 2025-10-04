@@ -1,0 +1,10 @@
+body { font-family: Arial, Helvetica, sans-serif; background:#0b1220; color:#e6eef6; margin:0; padding:12px; }
+.wrap { display:flex; gap:12px; }
+.left { width:360px; background:#071029; padding:12px; border-radius:8px; }
+.right { flex:1; background:#071029; padding:12px; border-radius:8px; }
+input, textarea, select { width:100%; padding:8px; margin:6px 0; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background:#071827; color:#e6eef6; }
+.buttons { display:flex; gap:8px; margin-top:6px; }
+button { padding:8px 10px; background:#4f46e5; color:white; border:none; border-radius:6px; cursor:pointer; }
+.logbox { height:300px; overflow:auto; background:#020617; padding:8px; border-radius:6px; list-style:none; margin:6px 0; }
+.logbox li { padding:4px 6px; border-bottom:1px solid rgba(255,255,255,0.02); font-family:monospace; font-size:13px; }
+#stats, #proxyStats { margin-top:8px; color:#9aa4b2; }

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>VoidBot — simplified</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h2>VoidBot — simplified</h2>
+
+    <section class="left">
+      <label>Server (host:port)</label>
+      <input id="server" value="127.0.0.1:25565" />
+
+      <label>Max bots</label>
+      <input id="botMax" type="number" value="5" />
+
+      <label>Join delay (ms)</label>
+      <input id="joinDelay" type="number" value="1500" />
+
+      <div class="buttons">
+        <button id="btnStart">Start</button>
+        <button id="btnStop">Stop</button>
+      </div>
+
+      <hr/>
+
+      <label>Proxy type</label>
+      <select id="proxyType">
+        <option value="socks5">socks5</option>
+        <option value="socks4">socks4</option>
+        <option value="http">http</option>
+        <option value="auto">auto</option>
+      </select>
+
+      <label>Proxy list (ip:port[:user:pass])</label>
+      <textarea id="proxyList" rows="8"></textarea>
+
+      <div class="buttons">
+        <button id="proxyTestStart">Test</button>
+        <button id="proxyTestStop">Stop Test</button>
+      </div>
+
+      <div id="proxyStats">Tested: 0, Good: 0</div>
+    </section>
+
+    <section class="right">
+      <label>Proxy log</label>
+      <ul id="proxyLog" class="logbox"></ul>
+
+      <label>Bot statuses</label>
+      <ul id="botList" class="logbox"></ul>
+
+      <div id="stats">Bots: 0 | In server: 0</div>
+    </section>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

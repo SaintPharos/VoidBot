@@ -1,0 +1,19 @@
+{
+  "name": "mc-multi-bot-electron-simple",
+  "version": "1.0.0",
+  "description": "Simple Electron app to spawn mineflayer bots + MC proxy tester (minecraft-protocol + socks)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "You",
+  "license": "MIT",
+  "dependencies": {
+    "mineflayer": "^4.0.0",
+    "minecraft-protocol": "^1.31.0",
+    "socks": "^2.7.2"
+  },
+  "devDependencies": {
+    "electron": "^25.2.0"
+  }
+}
